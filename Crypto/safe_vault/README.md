@@ -7,7 +7,7 @@
 Este fue mi favorito.
 Aqui nos explican que tenemos que usar un servicio remoto **safe.py** para obtener la *llave* necesaria para desencriptar un archivo de la base de datos **database_export.bin** usando el *script proporcionado* **encrypt-decrypt_db.py**.
 
-safe.py:
+**safe.py:**
 ```python
 import socketserver
 import base64
@@ -102,12 +102,15 @@ for i in range(11,16):
                 print(data)
             r.close()
         except Exception as e:
-            pass```
+            pass
+```
 
 Comparando el b64 original decodificado: *f02390d55d92ff3ce11af0180ad4ea4a889a6a1acd9e5364d6cb67bd4d0dbe17* con los resultantes del script que tuvieran 0 y 1 en el id, cambiamos esas dos posiciones y codificamos en b64 para asi sacar la flag.
 
 posicion, caracter sustituto y hexadecimal:
+
 13 6 *f02390d55d92f63ce11af0180ad4ea4a889a6a1acd9e5364d6cb67bd4d0dbe17*
+
 15 4 *f02390d55d92ff34e11af0180ad4ea4a889a6a1acd9e5364d6cb67bd4d0dbe17*
 
 hexadecimal resultante: *f02390d55d92f634e11af0180ad4ea4a889a6a1acd9e5364d6cb67bd4d0dbe17*
