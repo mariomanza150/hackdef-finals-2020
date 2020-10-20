@@ -36,7 +36,8 @@ for i in range(1000):
     print(f"{whole}\t{i}\t{res}")
     if whole:
         print(f"FLAG -> {long_to_bytes(int(res))}")
-        exit()```
+        exit()
+```
 
 y nos muestra el nombre y id de la credencial:
 FLAG -> b'RUTILIO SOBERANO\nID: 983348933400987\n'
