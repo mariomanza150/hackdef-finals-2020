@@ -35,4 +35,4 @@ with open("DB_Password", "rb") as f:
 
 Cambiando la extension y abriendolo nos dio la flag.
 
-![Solve](solve.pdf)
+![Solve](solve.png)
