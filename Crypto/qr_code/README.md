@@ -32,7 +32,8 @@ else:
 	print("La llave no cumple con la condicion")
 ```
 ![Codigo QR](QR.png)
-Al escanearlo regresa un string hexadecimal.
+
+Al escanearlo regresa un string hexadecimal que es nuestro mensaje encriptado.
 **b7f65a38f2c2dcba6965697107606d4880fb5567e094c99e5c0454045856416eb1a76620a6c9e5a34d0458016b025602ebb61872b7869bbc**
 
 ### Solucion
@@ -69,3 +70,5 @@ plaintext = a.decrypt(ciphertext)
 print plaintext
 ```
 ![Solve](solve.png)
+
+Y voila: **hackdef{QR_D3S_y_ll4v3s_d3b1les_n0_s0n_bu3n4_1d34!!!!!!}**
