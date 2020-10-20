@@ -5,7 +5,9 @@
 En este reto nos dieron un *exe* **XtremeTool.exe** y un *archivo encriptado* **DB_Password** con ese ejecutable. Al descompilar y analizarlo, nos topamos con las 2 cosas que nos permitieron resolver este reto.
 
 La llave de encripcion y el algortimo con el que se encripto.
+
 **adde0000efbe0000beba0000cefa0000**
+
 **XTEA** (Extended Tiny Encryption Algorithm)
 
 ### Solucion
@@ -28,7 +30,8 @@ with open("DB_Password", "rb") as f:
         message = message.rjust(8, b'0')  # Block size is 64 bytes
         r = x.xtea_decrypt(bytes.fromhex(key),message)
         txt.write(r)
-        txt.close()```
+        txt.close()
+```
 
 Cambiando la extension y abriendolo nos dio la flag.
 
